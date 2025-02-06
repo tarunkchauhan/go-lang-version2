@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaderboard - Mental Math Challenge</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div id="leaderboard-page" class="section glass-effect">
+        <h1 class="title">Leaderboard</h1>
+        <div class="leaderboard-tabs">
+            <button onclick="showLeaderboard('score')" class="tab-btn active">By Score</button>
+            <button onclick="showLeaderboard('speed')" class="tab-btn">By Speed</button>
+        </div>
+        <div id="leaderboard-list" class="leaderboard-container"></div>
+        <div class="controls">
+            <a href="/" class="primary-btn">Back to Game</a>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 

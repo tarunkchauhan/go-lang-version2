@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Mental Math Challenge</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div id="app">
+        <div class="section glass-effect">
+            <h1 class="title">Mental Math Speed Test</h1>
+            <div id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <span class="error" id="username-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <span class="error" id="password-error"></span>
+                </div>
+                <div class="button-group">
+                    <button onclick="login()" class="primary-btn">Login</button>
+                    <a href="/register" class="secondary-btn">Create Account</a>
+                </div>
+                <div class="social-login">
+                    <div class="divider">or</div>
+                    <a href="/auth/github/login" class="github-btn">
+                        <img src="/static/github-mark.svg" alt="GitHub Logo">
+                        Continue with GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/auth.js"></script>
+</body>
+</html> 
